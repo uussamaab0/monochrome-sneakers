@@ -311,47 +311,77 @@ header {
   line-height: 1;
 }
 
-.features-grid {
+.features-split {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .feature-card {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border);
-  padding: 3rem 2.5rem;
+  padding: 2.5rem;
   transition: var(--transition);
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .feature-card:hover {
   border-color: var(--border-focus);
-  transform: translateY(-5px);
+  transform: translateX(5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .feature-num {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   color: var(--text-muted);
   line-height: 1;
-  margin-bottom: 2rem;
 }
 
-.feature-card h3 {
+.feature-card-content h3 {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }
 
-.feature-card p {
+.feature-card-content p {
   color: var(--text-secondary);
   font-weight: 300;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+}
+
+.features-image-wrapper {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-image-wrapper img {
+  filter: grayscale(1) contrast(1.1);
+  transition: var(--transition);
+}
+
+.features-image-wrapper img:hover {
+  filter: grayscale(0.1) contrast(1.15);
+  transform: scale(1.05);
 }
 
 /* Specs & Tech */
@@ -526,6 +556,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 968px) {
   .hero-grid,
+  .features-split,
   .specs-grid,
   .buy-grid {
     grid-template-columns: 1fr;
