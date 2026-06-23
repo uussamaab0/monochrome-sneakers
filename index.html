@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VOID - Next generation luxury minimalist sneakers built for ultimate performance and zero noise.">
+  <title>VOID 01 // Luxury Monochrome Sneakers</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="logo-link">VOID<span>01</span></a>
+      <nav class="nav-links">
+        <a href="#hero" class="active" id="nav-home">Overview</a>
+        <a href="#features" id="nav-features">Design</a>
+        <a href="#specs" id="nav-specs">Specs</a>
+        <a href="#buy" id="nav-buy">Pre-Order</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="cart-icon" id="cart-btn" aria-label="Shopping Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1>VOID 01 <span>SILENCE.</span></h1>
+        <p>A masterclass in modern monochrome design. Handcrafted with high-performance aerospace fabrics and a carbon-fiber core. Designed to feel like nothing, built to withstand everything.</p>
+        <div class="cta-group">
+          <a href="#buy" class="btn btn-primary" id="hero-cta-buy">Pre-Order Now</a>
+          <a href="#features" class="btn btn-secondary" id="hero-cta-features">Explore Tech</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="sneaker.png" alt="VOID 01 Sneaker Front Angle" id="hero-sneaker-img">
+        <div class="img-bg-shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Design Section -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span>Engineered Performance</span>
+        <h2>Silence in Motion</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" id="feature-1">
+          <div class="feature-num">01</div>
+          <h3>Matte Outer shell</h3>
+          <p>Super-hydrophobic weave that repels moisture and stains, remaining clean in all urban environments while maintaining flexibility.</p>
+        </div>
+        <div class="feature-card" id="feature-2">
+          <div class="feature-num">02</div>
+          <h3>Carbon-Fiber Core</h3>
+          <p>An ultra-lightweight carbon inner plate redirects energy return with every step, maximizing walking comfort and performance stability.</p>
+        </div>
+        <div class="feature-card" id="feature-3">
+          <div class="feature-num">03</div>
+          <h3>Adaptive Cushioning</h3>
+          <p>A custom dual-density EVA midsole adapts to your foot shape within 48 hours of wear, creating a personalized fit unique to you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs Section -->
+  <section class="specs" id="specs">
+    <div class="section-container">
+      <div class="specs-grid">
+        <div class="specs-image">
+          <img src="sneaker.png" alt="VOID 01 Sneaker Side View" id="specs-sneaker-img">
+        </div>
+        <div class="specs-list">
+          <div class="section-header">
+            <span>Technical Specs</span>
+            <h2>Built to Last</h2>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Weight</div>
+            <div class="spec-value">180g (Single Shoe, Size 9)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Upper Material</div>
+            <div class="spec-value">Recycled Monofilament Mesh & Synthetic Suede</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Midsole</div>
+            <div class="spec-value">Zero-Gravity Cushioning System</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Outsole</div>
+            <div class="spec-value">Aerospace Carbon-infused Rubber Compound</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Order Section -->
+  <section class="buy-section" id="buy">
+    <div class="section-container">
+      <div class="buy-grid">
+        <div class="buy-info">
+          <h2>VOID 01 BLACK</h2>
+          <div class="buy-price">$260 USD</div>
+          <p style="color: var(--text-secondary); margin-bottom: 2.5rem; font-weight: 300;">Includes custom matte-black presentation box, travel pouch, and spare tonal laces. Free international express shipping.</p>
+          
+          <div class="selector-group">
+            <div class="selector-title">Select US Size</div>
+            <div class="size-grid">
+              <button class="size-btn" data-size="8" id="size-8">US 8</button>
+              <button class="size-btn" data-size="9" id="size-9">US 9</button>
+              <button class="size-btn" data-size="10" id="size-10">US 10</button>
+              <button class="size-btn" data-size="11" id="size-11">US 11</button>
+              <button class="size-btn" data-size="12" id="size-12">US 12</button>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width: 100%;" id="buy-btn">Confirm Pre-Order</button>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <img src="sneaker.png" alt="VOID 01 Sneaker Package" style="filter: grayscale(1); max-width: 80%;" id="buy-sneaker-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo">VOID<span>01</span></div>
+      <div class="footer-copy">&copy; 2026 VOID Footwear. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#" id="foot-privacy">Privacy</a>
+        <a href="#" id="foot-terms">Terms</a>
+        <a href="#" id="foot-shipping">Shipping</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
